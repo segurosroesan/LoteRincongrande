@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Lote 1.250 m² · Conjunto Rincón Grande · Sopó</title>
+<meta name="description" content="Lote esquinero plano de 1.250 m² con zonas verdes en dos costados, en exclusivo conjunto campestre junto al Club Militar y Hatogrande. Estudio de suelos incluido. $750.000.000." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --cream: #f4f1ea;
+    --cream-deep: #ebe6db;
+    --ivory: #faf8f3;
+    --ink: #1f2620;
+    --ink-soft: #3a423b;
+    --moss: #2f4a36;
+    --moss-deep: #1f3325;
+    --hedge: #4a6b4f;
+    --sage: #8aa089;
+    --gold: #b08d4a;
+    --gold-soft: #c9a866;
+    --line: rgba(31, 38, 32, 0.15);
+    --line-soft: rgba(31, 38, 32, 0.08);
+    --serif: "Cormorant Garamond", "Times New Roman", serif;
+    --sans: "Plus Jakarta Sans", system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, monospace;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--ivory);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+  @media (max-width: 700px) { .wrap { padding: 0 20px; } }
+
+  /* ---------- NAV ---------- */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    background: rgba(250, 248, 243, 0.85);
+    backdrop-filter: saturate(140%) blur(14px);
+    -webkit-backdrop-filter: saturate(140%) blur(14px);
+    border-bottom: 1px solid var(--line-soft);
+    transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 32px;
+    max-width: 1240px; margin: 0 auto;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 12px;
+    font-family: var(--serif); font-size: 22px; letter-spacing: 0.01em;
+  }
+  .brand-mark {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--moss); color: var(--ivory);
+    display: grid; place-items: center;
+    font-family: var(--serif); font-size: 16px; font-style: italic;
+  }
+  .brand-name { font-weight: 500; }
+  .brand-name em { font-style: italic; font-weight: 400; color: var(--moss); }
+  .nav-links { display: flex; gap: 28px; font-size: 13.5px; letter-spacing: 0.04em; }
+  .nav-links a { opacity: 0.78; transition: opacity 0.2s; }
+  .nav-links a:hover { opacity: 1; }
+  .nav-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--moss); color: var(--ivory);
+    padding: 10px 18px; border-radius: 999px;
+    font-size: 13.5px; font-weight: 500; letter-spacing: 0.02em;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .nav-cta:hover { background: var(--moss-deep); transform: translateY(-1px); }
+  .nav-cta svg { width: 14px; height: 14px; }
+  @media (max-width: 880px) { .nav-links { display: none; } .nav-inner { padding: 14px 20px; } }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative; min-height: 100vh;
+    display: flex; align-items: flex-end;
+    color: var(--ink);
+    background: #ffffff;
+    overflow: hidden;
+  }
+  .hero-bg {
+    display: none;
+  }
+  .hero-inner {
+    position: relative; z-index: 2;
+    padding: 140px 32px 80px; width: 100%;
+    max-width: 1240px; margin: 0 auto;
+  }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--moss);
+    margin-bottom: 28px;
+  }
+  .hero-eyebrow::before {
+    content: ""; width: 32px; height: 1px; background: var(--moss);
+  }
+  .hero-flag {
+    display: inline-block;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--ivory); background: var(--moss);
+    padding: 8px 16px; margin-bottom: 24px;
+    border-radius: 2px;
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(47, 74, 54, 0.4); } 50% { box-shadow: 0 0 0 12px rgba(47, 74, 54, 0); } }
+  .hero h1 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(44px, 7vw, 92px);
+    line-height: 1.02; letter-spacing: -0.01em;
+    margin: 0 0 28px;
+    max-width: 14ch;
+  }
+  .hero h1 em { font-style: italic; color: var(--moss); font-weight: 300; }
+  .hero-sub {
+    font-size: clamp(15px, 1.4vw, 18px);
+    max-width: 52ch; line-height: 1.6;
+    opacity: 0.88; font-weight: 300;
+  }
+  .hero-meta {
+    margin-top: 48px;
+    display: flex; gap: 48px; flex-wrap: wrap;
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+  }
+  .hero-meta div { display: flex; flex-direction: column; gap: 4px; }
+  .hero-meta .k { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.65; }
+  .hero-meta .v { font-family: var(--serif); font-size: clamp(22px, 2.6vw, 32px); font-weight: 400; }
+  .hero-scroll {
+    position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
+    font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+    opacity: 0.7; z-index: 3;
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+  }
+  .hero-scroll .line { width: 1px; height: 36px; background: var(--ink); animation: drop 2s ease-in-out infinite; }
+  @keyframes drop { 0%, 100% { transform: scaleY(0.4); transform-origin: top; } 50% { transform: scaleY(1); } }
+
+  /* ---------- SECTION HEADINGS ---------- */
+  section { padding: 120px 0; position: relative; }
+  @media (max-width: 700px) { section { padding: 80px 0; } }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--moss);
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .eyebrow::before { content: ""; width: 24px; height: 1px; background: var(--moss); }
+  .section-h {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(34px, 5vw, 56px); line-height: 1.08; letter-spacing: -0.01em;
+    margin: 0 0 24px;
+    max-width: 22ch;
+  }
+  .section-h em { font-style: italic; color: var(--moss); font-weight: 300; }
+  .lead { font-size: 18px; line-height: 1.7; max-width: 60ch; color: var(--ink-soft); font-weight: 300; }
+
+  /* ---------- FACTS STRIP ---------- */
+  .facts {
+    background: var(--moss);
+    color: var(--ivory);
+    padding: 64px 0;
+  }
+  .facts-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+  .fact {
+    padding: 20px 28px;
+    border-left: 1px solid rgba(255,255,255,0.18);
+  }
+  .fact:first-child { border-left: none; padding-left: 0; }
+  .fact .v {
+    font-family: var(--serif); font-size: clamp(36px, 4.4vw, 56px);
+    line-height: 1; font-weight: 400; margin-bottom: 8px;
+    display: flex; align-items: baseline; gap: 6px;
+  }
+  .fact .v sup { font-size: 0.45em; font-family: var(--sans); font-weight: 500; letter-spacing: 0.04em; opacity: 0.7; }
+  .fact .k { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.7; }
+  @media (max-width: 880px) {
+    .facts-grid { grid-template-columns: repeat(2, 1fr); gap: 32px 0; }
+    .fact { padding: 0 20px; }
+    .fact:nth-child(3) { border-left: none; padding-left: 0; }
+    .fact:first-child, .fact:nth-child(3) { padding-left: 0; }
+  }
+
+  /* ---------- TWO COLUMN INTRO ---------- */
+  .intro { background: var(--ivory); }
+  .intro-grid {
+    display: grid; grid-template-columns: 1fr 1.1fr;
+    gap: 96px; align-items: start;
+  }
+  .intro-body p { font-size: 17px; line-height: 1.8; color: var(--ink-soft); margin: 0 0 20px; font-weight: 300; }
+  .intro-body p:first-child::first-letter {
+    font-family: var(--serif); float: left;
+    font-size: 78px; line-height: 0.85;
+    padding: 8px 14px 0 0; color: var(--moss); font-weight: 400;
+  }
+  .signature {
+    margin-top: 32px;
+    font-family: var(--serif); font-style: italic; font-size: 22px;
+    color: var(--moss);
+  }
+  @media (max-width: 880px) {
+    .intro-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  /* ---------- PLAN / SVG MAP ---------- */
+  .plan { background: var(--cream); }
+  .plan-grid {
+    display: grid; grid-template-columns: 1fr 1.3fr;
+    gap: 80px; align-items: center;
+  }
+  .plan-stage {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    background: var(--ivory);
+    border: 1px solid var(--line);
+    overflow: hidden;
+  }
+  .plan-stage svg { width: 100%; height: 100%; display: block; }
+  .plan-list { list-style: none; padding: 0; margin: 32px 0 0; }
+  .plan-list li {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+    font-size: 15px;
+    color: var(--ink-soft);
+  }
+  .plan-list li:last-child { border-bottom: 1px solid var(--line); }
+  .plan-list .dot {
+    flex: 0 0 auto; margin-top: 6px;
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--moss);
+  }
+  .plan-list .dot.green { background: var(--sage); }
+  .plan-list .dot.gold { background: var(--gold); }
+  .plan-list strong { color: var(--ink); font-weight: 600; }
+  @media (max-width: 880px) {
+    .plan-grid { grid-template-columns: 1fr; gap: 48px; }
+  }
+
+  /* ---------- GALLERY ---------- */
+  .gallery { background: var(--ivory); padding-bottom: 0; }
+  .gallery-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 56px; gap: 32px; flex-wrap: wrap; }
+  .gallery-grid {
+    display: grid; grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 16px; height: 720px;
+  }
+  .gallery-item {
+    position: relative; overflow: hidden; background: var(--cream-deep);
+    cursor: pointer;
+  }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s cubic-bezier(.2,.7,.2,1); }
+  .gallery-item:hover img { transform: scale(1.04); }
+  .gallery-item.tall { grid-row: span 2; }
+  .gallery-item .cap {
+    position: absolute; left: 20px; bottom: 20px;
+    background: rgba(15,20,16,0.65); color: var(--ivory);
+    padding: 8px 14px; border-radius: 999px;
+    font-size: 12px; letter-spacing: 0.06em;
+    backdrop-filter: blur(6px);
+  }
+  @media (max-width: 880px) {
+    .gallery-grid { grid-template-columns: 1fr; height: auto; }
+    .gallery-item { height: 280px; }
+    .gallery-item.tall { grid-row: auto; }
+  }
+
+  /* ---------- HOUSE DESIGN ---------- */
+  .house {
+    background: var(--moss-deep); color: var(--ivory);
+    margin-top: 0;
+  }
+  .house-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 80px; align-items: center;
+  }
+  .house h2 { color: var(--ivory); }
+  .house h2 em { color: var(--gold-soft); }
+  .house p { color: rgba(250,248,243,0.78); font-size: 17px; line-height: 1.75; font-weight: 300; }
+  .house-img { aspect-ratio: 4/3; overflow: hidden; }
+  .house-img img { width: 100%; height: 100%; object-fit: cover; }
+  .house-specs {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 24px; margin-top: 36px;
+    padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.18);
+  }
+  .house-spec .v { font-family: var(--serif); font-size: 32px; line-height: 1; margin-bottom: 6px; color: var(--gold-soft); font-weight: 400; }
+  .house-spec .k { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.65; }
+  .house .eyebrow { color: var(--gold-soft); }
+  .house .eyebrow::before { background: var(--gold-soft); }
+  @media (max-width: 880px) {
+    .house-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ---------- LOCATION ---------- */
+  .location { background: var(--cream); }
+  .loc-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 80px; align-items: center; }
+  .loc-map {
+    position: relative; aspect-ratio: 4/3;
+    background: var(--ivory);
+    border: 1px solid var(--line);
+    overflow: hidden;
+    text-decoration: none; color: inherit;
+    transition: transform 0.3s;
+  }
+  .loc-map:hover { transform: translateY(-2px); }
+  .map-pill {
+    position: absolute; left: 16px; bottom: 16px;
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(15,20,16,0.78); color: var(--ivory);
+    padding: 9px 14px; border-radius: 999px;
+    font-size: 12px; letter-spacing: 0.04em; font-weight: 500;
+    backdrop-filter: blur(8px);
+  }
+  .loc-map svg { width: 100%; height: 100%; }
+  .loc-list { list-style: none; padding: 0; margin: 0; }
+  .loc-list li {
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+    display: grid; grid-template-columns: 50px 1fr auto; gap: 20px;
+    align-items: center;
+  }
+  .loc-list li:last-child { border-bottom: 1px solid var(--line); }
+  .loc-list .num {
+    font-family: var(--serif); font-style: italic; font-size: 26px;
+    color: var(--moss);
+  }
+  .loc-list .name { font-size: 16px; font-weight: 500; }
+  .loc-list .sub { font-size: 13px; color: var(--ink-soft); opacity: 0.75; margin-top: 2px; }
+  .loc-list .dist {
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
+    color: var(--moss); white-space: nowrap;
+  }
+  @media (max-width: 880px) {
+    .loc-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ---------- VALUE ---------- */
+  .value { background: var(--ivory); }
+  .value-head { max-width: 60ch; margin-bottom: 56px; }
+  .value-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .value-card {
+    position: relative;
+    background: var(--cream);
+    padding: 40px 36px 36px;
+    border: 1px solid var(--line-soft);
+    display: flex; flex-direction: column; gap: 14px;
+    transition: transform 0.3s, background 0.3s;
+  }
+  .value-card:hover { transform: translateY(-4px); }
+  .value-card.highlight {
+    background: var(--moss); color: var(--ivory);
+    border-color: var(--moss-deep);
+  }
+  .value-card.highlight p { color: rgba(250,248,243,0.82); }
+  .value-num {
+    font-family: var(--serif); font-style: italic; font-size: 36px;
+    color: var(--moss); line-height: 1;
+  }
+  .value-card.highlight .value-num { color: var(--gold-soft); }
+  .value-card h3 {
+    font-family: var(--serif); font-weight: 500; font-size: 26px;
+    margin: 0; line-height: 1.15;
+  }
+  .value-card p { font-size: 15px; line-height: 1.7; color: var(--ink-soft); margin: 0; font-weight: 300; }
+  .value-tag {
+    display: inline-block; align-self: flex-start;
+    margin-top: 4px;
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
+    color: var(--gold-soft); text-transform: uppercase;
+    padding: 6px 12px; border: 1px solid var(--gold-soft);
+    border-radius: 999px;
+  }
+  @media (max-width: 700px) {
+    .value-grid { grid-template-columns: 1fr; }
+    .value-card { padding: 32px 24px; }
+  }
+
+  /* ---------- INCLUDED ---------- */
+  .included { background: var(--ivory); }
+  .inc-head { text-align: center; margin-bottom: 64px; }
+  .inc-head .section-h { margin-left: auto; margin-right: auto; }
+  .inc-head .eyebrow { justify-content: center; }
+  .inc-head .lead { margin-left: auto; margin-right: auto; }
+  .inc-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .inc-cell {
+    background: var(--ivory); padding: 40px 32px;
+    display: flex; flex-direction: column; gap: 16px;
+    transition: background 0.3s;
+  }
+  .inc-cell:hover { background: var(--cream); }
+  .inc-cell .icon {
+    width: 44px; height: 44px;
+    display: grid; place-items: center;
+    color: var(--moss);
+  }
+  .inc-cell .icon svg { width: 28px; height: 28px; stroke: currentColor; stroke-width: 1.2; fill: none; }
+  .inc-cell h3 { font-family: var(--serif); font-weight: 500; font-size: 22px; margin: 0; }
+  .inc-cell p { font-size: 14px; line-height: 1.65; color: var(--ink-soft); margin: 0; }
+  .inc-cell .opt {
+    display: inline-block; margin-top: 4px;
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
+    color: var(--gold); text-transform: uppercase;
+  }
+  @media (max-width: 880px) {
+    .inc-grid { grid-template-columns: 1fr; }
+  }
+
+
+  /* ---------- CONTACT ---------- */
+  .contact { background: var(--ink); color: var(--ivory); }
+  .contact .eyebrow { color: var(--gold-soft); }
+  .contact .eyebrow::before { background: var(--gold-soft); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+  .contact h2 { color: var(--ivory); }
+  .contact h2 em { color: var(--gold-soft); }
+  .contact .lead { color: rgba(250,248,243,0.75); }
+  .contact-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 40px;
+  }
+  .contact-card h3 {
+    font-family: var(--serif); font-size: 26px; font-weight: 400; margin: 0 0 24px;
+  }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--ivory); color: var(--ink);
+    padding: 14px 24px; border-radius: 999px;
+    font-size: 14px; font-weight: 500; letter-spacing: 0.02em;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .btn-primary:hover { background: var(--gold-soft); transform: translateY(-1px); }
+  .btn-ghost {
+    display: inline-flex; align-items: center; gap: 10px;
+    border: 1px solid rgba(255,255,255,0.35); color: var(--ivory);
+    padding: 13px 24px; border-radius: 999px;
+    font-size: 14px; font-weight: 500; letter-spacing: 0.02em;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .btn-ghost:hover { border-color: var(--gold-soft); background: rgba(255,255,255,0.04); }
+  .contact-direct { display: flex; flex-direction: column; gap: 24px; margin-top: 36px; }
+  .contact-direct .row {
+    padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.12);
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  }
+  .contact-direct .row:last-child { border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .contact-direct .k { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.6; margin-bottom: 6px; }
+  .contact-direct .v { font-family: var(--serif); font-size: 22px; }
+  .contact-direct a.v:hover { color: var(--gold-soft); }
+  @media (max-width: 880px) {
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .contact-card { padding: 28px; }
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    background: var(--ink); color: rgba(250,248,243,0.6);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 32px 0;
+    font-size: 13px;
+  }
+  .foot-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .foot-brand { font-family: var(--serif); font-style: italic; }
+
+  /* ---------- WHATSAPP FLOAT ---------- */
+  .wa-float {
+    position: fixed; right: 24px; bottom: 24px; z-index: 60;
+    width: 56px; height: 56px; border-radius: 50%;
+    background: #25d366; color: white;
+    display: grid; place-items: center;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+    transition: transform 0.2s;
+  }
+  .wa-float:hover { transform: scale(1.08); }
+  .wa-float svg { width: 28px; height: 28px; fill: currentColor; }
+
+  /* ---------- LIGHTBOX ---------- */
+  .lb {
+    position: fixed; inset: 0; z-index: 100;
+    background: rgba(15,20,16,0.94);
+    display: none;
+    align-items: center; justify-content: center;
+    padding: 40px;
+    backdrop-filter: blur(6px);
+  }
+  .lb.open { display: flex; }
+  .lb img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .lb-close {
+    position: absolute; top: 24px; right: 24px;
+    width: 40px; height: 40px; border-radius: 50%;
+    background: rgba(255,255,255,0.1); color: var(--ivory);
+    display: grid; place-items: center;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  .lb-close:hover { background: rgba(255,255,255,0.2); }
+
+  /* fade-in animation */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.9s ease, transform 0.9s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <span class="brand-mark">RG</span>
+      <span class="brand-name">Rincón Grande <em>· Lote 1.250</em></span>
+    </div>
+    <div class="nav-links">
+      <a href="#lote">El lote</a>
+      <a href="#plano">Plano</a>
+      <a href="#valor">Por qué aquí</a>
+      <a href="#casa">Casa</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <a href="https://wa.me/573166902281?text=Hola%2C%20me%20interesa%20el%20lote%20en%20Conjunto%20Rinc%C3%B3n%20Grande" class="nav-cta" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1-1.1 2.5 0 1.5 1.1 2.9 1.2 3.1.1.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.2-.3-.2-.5-.3z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Conjunto Rincón Grande · Sopó / C/marca</div>
+    <div class="hero-flag">¡ Gran oportunidad !</div>
+    <h1>Uno de los <em>últimos 3 lotes</em> por construir en Rincón Grande.</h1>
+    <p class="hero-sub">Lote plano, en uno de los conjuntos campestres más privados de la Sabana. Vecino al Club Militar y Hatogrande, con acceso directo por la Autopista Norte — sin pasar por los trancones de Chía y Cajicá. Espacio suficiente para una casa amplia en una o dos plantas, con un gran potencial de valorización por la ampliación de la autopista y el proyecto del Regiotram.</p>
+    <div class="hero-meta">
+      <div><span class="k">Área</span><span class="v">1.250 m²</span></div>
+      <div><span class="k">Frente</span><span class="v">37 m</span></div>
+      <div><span class="k">Tipo</span><span class="v">Esquinero · plano</span></div>
+      <div><span class="k">Valor</span><span class="v">$ 750'000.000</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Recorrer</span><span class="line"></span></div>
+</header>
+
+<!-- FACTS STRIP -->
+<section class="facts" style="padding: 56px 0;">
+  <div class="wrap">
+    <div class="facts-grid">
+      <div class="fact">
+        <div class="v">1.250<sup>M²</sup></div>
+        <div class="k">Área total</div>
+      </div>
+      <div class="fact">
+        <div class="v">37<sup>M</sup></div>
+        <div class="k">Frente sobre vía</div>
+      </div>
+      <div class="fact">
+        <div class="v">2<sup>LADOS</sup></div>
+        <div class="k">Zona verde comunal</div>
+      </div>
+      <div class="fact">
+        <div class="v">$ 2<sup>MM</sup></div>
+        <div class="k">Administración / mes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro reveal" id="lote">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div>
+        <div class="eyebrow">El Lote</div>
+        <h2 class="section-h">Una esquina <em>tranquila</em>, abierta al verde por dos costados.</h2>
+      </div>
+      <div class="intro-body">
+        <p>Pocos lotes en Rincón Grande comparten esta condición: 1.250 m² completamente planos, en posición de esquina, con zonas verdes comunales que enmarcan dos de sus costados. Eso significa luz, vistas largas y vecinos solo en dos lados — una sensación de campo dentro del conjunto.</p>
+        <p>El terreno se entrega con el estudio de suelos terminado, lista para iniciar obra. Y si lo desea, también puede recibirlo con el diseño completo de una casa de cuatro habitaciones — arquitectónico y estructural — incluido en el valor.</p>
+        <div class="signature">— una oportunidad escasa en la Sabana.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section class="plan reveal" id="plano">
+  <div class="wrap">
+    <div class="plan-grid">
+      <div>
+        <div class="eyebrow">Plano del Lote</div>
+        <h2 class="section-h">Geometría <em>generosa</em>, frente amplio.</h2>
+        <p class="lead">Forma regular, 37 m de frente sobre la vía interna del conjunto. La condición esquinera y los dos costados de zona verde permiten libertad total en la implantación de la casa: orientación al sol, terrazas amplias, doble fachada principal.</p>
+        <ul class="plan-list">
+          <li><span class="dot"></span><div><strong>1.250 m² totales, esquinero y plano</strong><br /><span style="opacity:0.7">37 m de frente</span></div></li>
+          <li><span class="dot green"></span><div><strong>Costado oriental sobre el Club Militar de Golf</strong><br /><span style="opacity:0.7">Vista permanente al verde — sin construcciones al frente</span></div></li>
+          <li><span class="dot gold"></span><div><strong>Esquina sobre vía interna del conjunto</strong><br /><span style="opacity:0.7">Vecinos sólo por un costado — máxima privacidad</span></div></li>
+        </ul>
+      </div>
+      <div class="plan-stage">
+        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="golf" patternUnits="userSpaceOnUse" width="22" height="22" patternTransform="rotate(35)">
+              <rect width="22" height="22" fill="#c7d5b4"/>
+              <circle cx="6" cy="6" r="1.2" fill="#94a884"/>
+              <circle cx="15" cy="15" r="1.2" fill="#94a884"/>
+            </pattern>
+            <pattern id="road" patternUnits="userSpaceOnUse" width="14" height="14" patternTransform="rotate(45)">
+              <rect width="14" height="14" fill="#e8e2d2"/>
+              <line x1="0" y1="0" x2="0" y2="14" stroke="#d8d0bd" stroke-width="0.6"/>
+            </pattern>
+            <pattern id="vecino" patternUnits="userSpaceOnUse" width="10" height="10">
+              <rect width="10" height="10" fill="#eee9dc"/>
+              <line x1="0" y1="10" x2="10" y2="0" stroke="#d8d0bd" stroke-width="0.4"/>
+            </pattern>
+          </defs>
+          <rect width="600" height="450" fill="#faf8f3"/>
+          <!-- Golf course (right side) -->
+          <path d="M 420 40 L 580 60 L 580 380 L 410 360 Z" fill="url(#golf)" stroke="#94a884" stroke-width="1" stroke-dasharray="3 3"/>
+          <text x="500" y="210" text-anchor="middle" fill="#5d6b54" font-family="Cormorant Garamond" font-style="italic" font-size="18">Campo de Golf</text>
+          <text x="500" y="232" text-anchor="middle" fill="#5d6b54" font-family="Plus Jakarta Sans" font-size="9" letter-spacing="2">ZONA VERDE</text>
+          <!-- Neighbor (one side: top) -->
+          <path d="M 30 30 L 300 30 L 285 130 L 30 110 Z" fill="url(#vecino)" stroke="#c8bfa6" stroke-width="1"/>
+          <text x="170" y="78" text-anchor="middle" fill="#9c9482" font-family="Plus Jakarta Sans" font-size="10" letter-spacing="2">CASA VECINA</text>
+          <!-- Road (two sides: left + bottom = corner) -->
+          <path d="M 10 130 L 280 145 L 310 175 L 370 360 L 580 410 L 580 440 L 10 440 Z" fill="url(#road)" stroke="#b8ad94" stroke-width="0.5"/>
+          <path d="M 30 180 L 280 190 L 320 220 L 360 360" stroke="#fff" stroke-width="1.6" stroke-dasharray="7 9" fill="none" opacity="0.8"/>
+          <text x="180" y="410" text-anchor="middle" fill="#9c9482" font-family="Cormorant Garamond" font-style="italic" font-size="16">vía interna del conjunto</text>
+          <!-- THE LOT -->
+          <polygon points="110,140 410,160 410,355 145,330" fill="#2f4a36" stroke="#1f3325" stroke-width="2.5"/>
+          <polygon points="118,148 402,168 402,346 152,323" fill="none" stroke="#c9a866" stroke-width="0.8" stroke-dasharray="2 4" opacity="0.55"/>
+          <text x="263" y="240" text-anchor="middle" fill="#faf8f3" font-family="Cormorant Garamond" font-size="38" font-style="italic">El Lote</text>
+          <text x="263" y="265" text-anchor="middle" fill="#c9a866" font-family="Plus Jakarta Sans" font-size="11" letter-spacing="4">1.250 M²</text>
+          <text x="263" y="285" text-anchor="middle" fill="#c9a866" font-family="Plus Jakarta Sans" font-size="9" letter-spacing="3" opacity="0.75">ESQUINERO · PLANO</text>
+          <g font-family="JetBrains Mono" font-size="11" fill="#3a423b">
+            <rect x="230" y="138" width="68" height="16" fill="#faf8f3" stroke="#3a423b" stroke-width="0.4"/>
+            <text x="264" y="150" text-anchor="middle">32,47 m</text>
+            <rect x="420" y="248" width="50" height="16" fill="#faf8f3" stroke="#3a423b" stroke-width="0.4"/>
+            <text x="445" y="260" text-anchor="middle">24,00 m</text>
+            <rect x="232" y="343" width="68" height="16" fill="#faf8f3" stroke="#3a423b" stroke-width="0.4"/>
+            <text x="266" y="355" text-anchor="middle">37,00 m</text>
+            <rect x="55" y="232" width="58" height="16" fill="#faf8f3" stroke="#3a423b" stroke-width="0.4"/>
+            <text x="84" y="244" text-anchor="middle">27,50 m</text>
+          </g>
+          <g transform="translate(145,330)">
+            <circle r="7" fill="#c9a866"/>
+            <circle r="13" fill="none" stroke="#c9a866" stroke-width="1" opacity="0.5"/>
+          </g>
+          <text x="110" y="360" fill="#b08d4a" font-family="Cormorant Garamond" font-style="italic" font-size="15">esquina</text>
+          <g transform="translate(50,400)">
+            <circle r="20" fill="#faf8f3" stroke="#3a423b" stroke-width="0.8"/>
+            <path d="M0,-14 L4,0 L0,4 L-4,0 Z" fill="#2f4a36"/>
+            <path d="M0,14 L4,0 L0,-4 L-4,0 Z" fill="#9c9482"/>
+            <text y="-22" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="9" fill="#3a423b" letter-spacing="1">N</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery reveal">
+  <div class="wrap">
+    <div class="gallery-head">
+      <div>
+        <div class="eyebrow">Galería</div>
+        <h2 class="section-h">Verlo es <em>entenderlo</em>.</h2>
+      </div>
+      <p class="lead" style="max-width:38ch">Vistas reales del lote al atardecer y render de la casa que puede recibir incluida en el precio.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall" data-img="assets/lote-01.jpg">
+        <img src="assets/lote-01.jpg" alt="Lote al atardecer" />
+        <span class="cap">El lote · atardecer</span>
+      </div>
+      <div class="gallery-item" data-img="assets/lote-02.jpg">
+        <img src="assets/lote-02.jpg" alt="Vista lateral del lote" />
+        <span class="cap">Vista lateral</span>
+      </div>
+      <div class="gallery-item" data-img="assets/render-casa.jpg">
+        <img src="assets/render-casa.jpg" alt="Render de la casa propuesta" />
+        <span class="cap">Render casa · 4 habitaciones</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOUSE INCLUDED -->
+<section class="house reveal" id="casa">
+  <div class="wrap">
+    <div class="house-grid">
+      <div class="house-img">
+        <img src="assets/render-casa.jpg" alt="Render de la casa de 4 habitaciones" />
+      </div>
+      <div>
+        <div class="eyebrow">Diseño Incluido</div>
+        <h2 class="section-h">Una casa <em>amplia</em>, pensada para la familia.</h2>
+        <p>El lote se entrega — si lo desea — con el diseño arquitectónico y estructural completo de una vivienda contemporánea de <strong style="color:var(--ivory);font-weight:500">dos pisos y cuatro habitaciones</strong> (ver render). O, si prefiere, diseñe la casa de sus sueños a su gusto.</p>
+        <p>Por sus 1.250 m², es uno de los pocos lotes de la zona donde cabe holgadamente una casa de <strong style="color:var(--ivory);font-weight:500">una sola planta</strong> — sin sacrificar habitaciones, áreas sociales ni jardín. Una decisión que muchos compradores hoy valoran por encima de todo: vida en un solo nivel.</p>
+        <div class="house-specs">
+          <div class="house-spec">
+            <div class="v">4</div>
+            <div class="k">Habitaciones</div>
+          </div>
+          <div class="house-spec">
+            <div class="v">1 ó 2</div>
+            <div class="k">Plantas (cabe casa de 1 piso)</div>
+          </div>
+          <div class="house-spec">
+            <div class="v">Arq + Est</div>
+            <div class="k">Diseño completo</div>
+          </div>
+          <div class="house-spec">
+            <div class="v">Incluido</div>
+            <div class="k">En el valor del lote</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location reveal" id="ubicacion">
+  <div class="wrap">
+    <div class="loc-grid">
+      <a href="https://maps.app.goo.gl/22ygEZKtHx9bRoh8A" target="_blank" rel="noopener" class="loc-map" style="display:block;cursor:pointer;" title="Ver en Google Maps">
+        <img src="assets/satelital.png" alt="Vista satelital del lote 1.250 m² — vecino al Club Militar de Golf" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        <span class="map-pill">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-7.5-7-12a7 7 0 1 1 14 0c0 4.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Abrir en Google Maps
+        </span>
+      </a>
+      <div>
+        <div class="eyebrow">Ubicación</div>
+        <h2 class="section-h">Entre los <em>dos clubes</em> más reconocidos de la Sabana.</h2>
+        <p class="lead">Rincón Grande se ubica en un corredor campestre privilegiado, vecino directo al Club Militar y al Club Hatogrande Golf & Tennis. <strong style="color:var(--ink);font-weight:500">Entrada directa por la Autopista Norte</strong> — sin atravesar Chía ni Cajicá, evitando los trancones que sufren la mayoría de conjuntos campestres de la Sabana.</p>
+        <ul class="loc-list">
+          <li>
+            <span class="num">01</span>
+            <div><div class="name">Club Militar de Golf</div><div class="sub">Vecino directo · vista al campo desde el lote</div></div>
+            <span class="dist">vecino</span>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <div><div class="name">Hatogrande Golf &amp; Tennis</div><div class="sub">Golf de 18 hoyos, equitación, tenis</div></div>
+            <span class="dist">~ 3 min</span>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <div><div class="name">Autopista Norte · entrada directa</div><div class="sub">Sin pasar por Chía ni Cajicá</div></div>
+            <span class="dist">~ 2 min</span>
+          </li>
+          <li>
+            <span class="num">04</span>
+            <div><div class="name">Bogotá · zona norte</div><div class="sub">Vía principal en doble calzada</div></div>
+            <span class="dist">~ 40 min</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE / PROJECTION -->
+<section class="value reveal" id="valor">
+  <div class="wrap">
+    <div class="value-head">
+      <div class="eyebrow">Por qué este lote</div>
+      <h2 class="section-h">Cuatro razones que lo hacen <em>poco común</em>.</h2>
+    </div>
+    <div class="value-grid">
+      <article class="value-card">
+        <span class="value-num">01</span>
+        <h3>Acceso sin trancones</h3>
+        <p>Llegada directa por la Autopista Norte — sin atravesar Chía ni Cajicá. El tráfico hacia y desde Bogotá se vuelve previsible: un beneficio enorme frente a otros conjuntos campestres de la Sabana.</p>
+      </article>
+      <article class="value-card highlight">
+        <span class="value-num">02</span>
+        <h3>Valorización con el Regiotren</h3>
+        <p>El nuevo Regiotren del Norte pasará muy cerca de la zona, conectando la Sabana con Bogotá de forma rápida y limpia. Uno de los proyectos de infraestructura con mayor impacto previsto en la valorización del corredor norte.</p>
+        <span class="value-tag">Proyección a 5 años</span>
+      </article>
+      <article class="value-card">
+        <span class="value-num">03</span>
+        <h3>Portería principal en renovación</h3>
+        <p>El conjunto tiene aprobado el plan de renovación de la portería principal, fortaleciendo aún más la seguridad y la presentación del acceso — una mejora que se traduce directamente en valor.</p>
+      </article>
+      <article class="value-card">
+        <span class="value-num">04</span>
+        <h3>Ambiente familiar</h3>
+        <p>Comunidad consolidada, niños jugando en zonas verdes, vecinos profesionales, ambiente seguro y silencioso. Pensado para familias que buscan calidad de vida sin renunciar a estar cerca de la ciudad.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUDED -->
+<section class="included reveal" id="incluye">
+  <div class="wrap">
+    <div class="inc-head">
+      <div class="eyebrow" style="display:inline-flex">Lo que incluye</div>
+      <h2 class="section-h">Más que un lote, <em>una base de obra lista</em>.</h2>
+      <p class="lead">Cada elemento incluido representa tiempo, gestión y dinero que usted no tiene que asumir después.</p>
+    </div>
+    <div class="inc-grid">
+      <div class="inc-cell">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 12c0-4.97 4.03-9 9-9s9 4.03 9 9-4.03 9-9 9-9-4.03-9-9z"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <h3>1.250 m² esquineros</h3>
+        <p>Lote plano, regular, con dos costados sobre zona verde comunal y un costado sobre vía interna del conjunto.</p>
+      </div>
+      <div class="inc-cell">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-7h6v7"/></svg></div>
+        <h3>Diseño de casa 4 cuartos</h3>
+        <p>Diseño arquitectónico contemporáneo de dos plantas, con planos coordinados listos para licencia.</p>
+        <span class="opt">Opcional · sin costo adicional</span>
+      </div>
+      <div class="inc-cell">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 12h16M12 4v16M8 8l8 8M16 8l-8 8"/></svg></div>
+        <h3>Diseño estructural</h3>
+        <p>Cálculo estructural completo de la vivienda propuesta, incluido en el mismo valor del lote.</p>
+        <span class="opt">Opcional · sin costo adicional</span>
+      </div>
+      <div class="inc-cell">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2v6M12 22V10M5 9l7 1 7-1M3 14l9 1 9-1M3 19l9 1 9-1"/></svg></div>
+        <h3>Estudio de suelos</h3>
+        <p>Realizado por laboratorio certificado. Listo para usar en el cálculo estructural y trámite de licencia.</p>
+      </div>
+      <div class="inc-cell">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>Administración</h3>
+        <p>$ 2.000.000 mensuales. Cubre vigilancia 24/7, mantenimiento de zonas comunes y portería del conjunto.</p>
+      </div>
+      <div class="inc-cell">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l4-3 6 4 4-3v13"/><path d="M9 21v-5h6v5"/></svg></div>
+        <h3>Conjunto cerrado</h3>
+        <p>Acceso controlado, vías internas en buen estado y vecindario consolidado. Portería principal en proceso de renovación.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact reveal" id="contacto">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="eyebrow">Contacto</div>
+        <h2 class="section-h">Agende una <em>visita</em> al lote.</h2>
+        <p class="lead">Le mostramos el lote en persona, le entregamos el plano, el estudio de suelos y los renders de la casa propuesta. Sin intermediarios — trato directo con el propietario.</p>
+        <div class="contact-direct">
+          <div class="row">
+            <div><div class="k">Teléfono / WhatsApp</div><a href="tel:+573166902281" class="v">+57 316 690 2281</a></div>
+            <a class="btn-ghost" href="https://wa.me/573166902281?text=Hola%2C%20me%20interesa%20el%20lote%20en%20Conjunto%20Rinc%C3%B3n%20Grande" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1-1.1 2.5 0 1.5 1.1 2.9 1.2 3.1.1.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.2-.3-.2-.5-.3z"/></svg>
+              Escribir
+            </a>
+          </div>
+          <div class="row">
+            <div><div class="k">Ubicación</div><span class="v">Conjunto Rincón Grande · Sopó</span></div>
+            <span class="dist" style="font-family:var(--mono);font-size:12px;opacity:0.6">vecino Club Militar &amp; Hatogrande</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-card" style="display: flex; flex-direction: column; justify-content: center; gap: 24px;">
+        <h3 style="font-family: var(--serif); font-size: clamp(26px, 3.5vw, 36px); font-weight: 400; margin: 0; color: var(--ivory);">Escríbenos o llámanos</h3>
+        <p style="font-size: 16px; opacity: 0.8; margin: 0; font-weight: 300; line-height: 1.65; color: var(--ivory);">Estamos disponibles de inmediato para responder tus preguntas, enviarte documentos adicionales (estudios, planos) o agendar tu visita al lote.</p>
+        
+        <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 8px;">
+          <a href="https://wa.me/573166902281?text=Hola%2C%20me%20interesa%20el%20lote%20en%20Conjunto%20Rinc%C3%B3n%20Grande" target="_blank" rel="noopener" class="btn-primary" style="justify-content: center; width: 100%; font-size: 15px; padding: 16px 24px; display: inline-flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1-1.1 2.5 0 1.5 1.1 2.9 1.2 3.1.1.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.2-.3-.2-.5-.3z"/></svg>
+            Escríbenos por WhatsApp
+          </a>
+          
+          <a href="tel:+573166902281" class="btn-ghost" style="justify-content: center; width: 100%; font-size: 15px; padding: 15px 24px; display: inline-flex; align-items: center; gap: 8px; text-align: center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Llámanos: +57 316 690 2281
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span class="foot-brand">Lote · Conjunto Rincón Grande</span>
+    <span>© 2026 · Venta directa por propietario · +57 316 690 2281</span>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-float" href="https://wa.me/573166902281?text=Hola%2C%20me%20interesa%20el%20lote%20en%20Conjunto%20Rinc%C3%B3n%20Grande" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.001 2.667c-7.364 0-13.334 5.97-13.334 13.333 0 2.341.611 4.625 1.772 6.638L2.667 29.333l6.875-1.736a13.27 13.27 0 0 0 6.459 1.668h.001c7.363 0 13.333-5.97 13.333-13.333S23.365 2.667 16.001 2.667zM23.79 21.49c-.332.93-1.629 1.715-2.625 1.93-.674.144-1.553.258-4.518-1.009-3.793-1.62-6.235-5.62-6.428-5.881-.184-.261-1.531-2.041-1.531-3.896 0-1.853.951-2.764 1.286-3.143.332-.378.722-.473.962-.473s.481.002.692.013c.221.011.516-.083.804.614.293.696.997 2.41 1.085 2.583.088.174.146.378.029.609-.117.232-.176.378-.347.581-.171.203-.36.453-.512.609-.171.174-.349.362-.15.71.2.348.886 1.464 1.904 2.371 1.309 1.165 2.412 1.527 2.76 1.701.349.174.553.146.756-.087.203-.232.872-1.019 1.105-1.368.232-.349.464-.291.785-.174.32.117 2.034.96 2.383 1.135.349.174.581.261.668.406.088.146.088.842-.244 1.769z" fill="currentColor"/></svg>
+</a>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb">
+  <button class="lb-close" id="lbClose" aria-label="Cerrar">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <img id="lbImg" alt="" />
+</div>
+
+<script>
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Nav style on scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) nav.style.borderBottomColor = 'rgba(31,38,32,0.15)';
+    else nav.style.borderBottomColor = 'rgba(31,38,32,0.04)';
+  });
+
+  // Gallery lightbox
+  const lb = document.getElementById('lb');
+  const lbImg = document.getElementById('lbImg');
+  document.querySelectorAll('.gallery-item').forEach(el => {
+    el.addEventListener('click', () => {
+      lbImg.src = el.dataset.img;
+      lb.classList.add('open');
+    });
+  });
+  document.getElementById('lbClose').addEventListener('click', () => lb.classList.remove('open'));
+  lb.addEventListener('click', (e) => { if (e.target === lb) lb.classList.remove('open'); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') lb.classList.remove('open'); });
+
+
+</script>
+
+</body>
+</html>
